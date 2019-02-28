@@ -37,6 +37,10 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
+  created () {
+    console.log(process.env.VUE_APP_SE)
+    console.log(process.env.VUE_APP_SS)
+  }
 }
 </script>
 
